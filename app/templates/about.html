@@ -1,0 +1,84 @@
+<!-- about html file created and edited by Aki Ruiha -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="main-card">
+
+    <div class="title-panel">
+        <h2>ABOUT US</h2>
+
+        <p>
+            Welcome! Here are the core things that we are focused on.
+        </p>
+    </div>
+
+    <div class="card-row">
+        <div class="result-card">
+            <h2>About the Project</h2>
+            <br>
+
+            <p>
+                This project uses machine learning to classify text as likely real or likely fake.
+            </p>
+        </div>
+
+        <div class="result-card">
+            <h2>How it Works</h2>
+
+            <br>
+                <p>
+                     Text
+                     <br><br>
+                      ↓
+                     <br><br>
+                     TF-IDF
+                     <br><br>
+                     ↓
+                    <br><br>
+                    Logistic Regression
+                     <br><br>
+                     ↓
+                     <br><br>
+                    Prediction
+                </p>
+        </div>
+
+        <div class="result-card">
+            <h2>Limitations</h2>
+            <br>
+            <ul>
+                <li>Predictions may not always be correct.</li>
+
+                <li>AI should support human judgement.</li>
+
+                <li>Results should not be treated as facts.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="button-row">
+
+        <a href="/results" class="page-button">
+            Analyse Article
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="footer-card">
+    <h3>How does this work?</h3>
+
+    <ul>
+        <li>AI analyses text patterns</li>
+
+        <li>Uses Machine Learning</li>
+
+        <li>Returns a prediction confidence</li>
+    </ul>
+</footer>
+
+{% endblock %}

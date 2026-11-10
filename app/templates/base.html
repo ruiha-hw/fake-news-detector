@@ -1,0 +1,47 @@
+<!-- base html file created and edited by Aki Ruiha -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fake News Detector</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <header class="banner">
+            <h1>FAKE NEWS</h1>
+
+            <a href="/" class="logo-box">
+
+                <img
+                    src="{{ url_for('static',
+                    filename='images/logo.png') }}"
+                    alt="Logo">
+
+            </a>
+
+            <h1>DETECTOR</h1>
+        </header>
+
+        <nav>
+            <a href="/about">About Us</a>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+</body>
+
+</html>

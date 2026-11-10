@@ -1,0 +1,46 @@
+<!-- home html file created and edited by Aki Ruiha -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="main-card">
+
+    <div class="title-panel">
+
+        <h2>CHECK NEWS CREDIBILITY</h2>
+
+        <p>
+            Paste a news article, headline,
+            or social media post below.
+        </p>
+
+    </div>
+
+    <textarea
+        placeholder="Please provide article title or link for analysis..."
+    ></textarea>
+
+    <div class="button-row">
+
+        <a href="/results" class="page-button">
+            Analyse Article
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="footer-card">
+
+    <h3>How does this work?</h3>
+
+    <ul>
+        <li>AI analyses text patterns</li>
+        <li>Uses machine learning</li>
+        <li>Returns a prediction confidence</li>
+    </ul>
+
+</footer>
+
+{% endblock %}

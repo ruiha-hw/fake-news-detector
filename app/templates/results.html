@@ -1,0 +1,67 @@
+<!-- results html file created and edited by Aki Ruiha -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="main-card">
+
+    <div class="title-panel">
+        <h2>CHECK NEWS CREDIBILITY</h2>
+        <p>Results</p>
+    </div>
+
+    <div class="card-row">
+        <div class="result-card">
+            <h2>Prediction</h2>
+            <br>
+
+            <p>
+                Likely Real
+            </p>
+        </div>
+
+        <div class="result-card">
+            <h2>Confidence Score</h2>
+            <br>
+
+            <p>
+                87%
+            </p>
+        </div>
+
+        <div class="result-card">
+            <h2>Explanation</h2>
+            <br>
+
+            <p>
+                The model identified language patterns commonly associated with trustworthy content.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="button-row">
+        <a href="/results" class="page-button">
+            Analyse Another Article
+        </a>
+
+        <a href="/about" class="page-button">
+            Learn More
+        </a>
+    </div>
+
+</section>
+
+<footer class="footer-card">
+    <h3>How does this work?</h3>
+    <ul>
+
+        <li>AI analyses text patterns</li>
+        <li>Uses Machine Learning</li>
+        <li>Returns a prediction confidence</li>
+
+    </ul>
+</footer>
+
+{% endblock %}
